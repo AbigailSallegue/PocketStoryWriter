@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- App Title -->
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pocket Story Writer"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:gravity="center" />
+
+    <!-- New Story Button -->
+    <Button
+        android:id="@+id/write_stories_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EB8FA9"
+        android:text="New Story"
+        app:icon="@android:drawable/ic_menu_edit"
+        app:layout_constraintTop_toBottomOf="@id/tvAppTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:padding="12dp" />
+
+    <!-- View Stories Button -->
+    <Button
+        android:id="@+id/view_stories_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#EF92AC"
+        android:text="View Stories"
+        app:icon="@android:drawable/ic_menu_search"
+        app:layout_constraintTop_toBottomOf="@id/write_stories_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Share Stories Button -->
+    <Button
+        android:id="@+id/btnShareStories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ED91AB"
+        android:text="Share Stories"
+        app:icon="@android:drawable/ic_menu_share"
+        app:layout_constraintTop_toBottomOf="@id/view_stories_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Illustration -->
+    <ImageView
+        android:id="@+id/imgBookStack"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/ic_android_black_24dp"
+        app:layout_constraintTop_toBottomOf="@id/btnShareStories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="16dp"
+        android:scaleType="fitCenter" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
